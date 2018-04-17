@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6CFBF476-F59D-4B5F-BA08-A34CE9687240</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CrissCrossApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6F077E3C9B6E2F16374BF008028FCA3FD5EA9BE</key>
+		<string>gitlab.noida.itaas.com:punit.jain/CrissCrossApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CrissCrossApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6F077E3C9B6E2F16374BF008028FCA3FD5EA9BE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitlab.noida.itaas.com:punit.jain/CrissCrossApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6F077E3C9B6E2F16374BF008028FCA3FD5EA9BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6F077E3C9B6E2F16374BF008028FCA3FD5EA9BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CrissCrossApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

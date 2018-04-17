@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		813115D11B1731210061D16A /* TextToSpeechConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 813115D01B1731210061D16A /* TextToSpeechConverter.m */; };
+		8C3188DD1B170C8D00999D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3188DC1B170C8D00999D7E /* main.m */; };
+		8C3188E01B170C8D00999D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3188DF1B170C8D00999D7E /* AppDelegate.m */; };
+		8C3188E31B170C8D00999D7E /* ConnectMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3188E21B170C8D00999D7E /* ConnectMeViewController.m */; };
+		8C3188E91B170C8D00999D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3188E71B170C8D00999D7E /* Main.storyboard */; };
+		8C3188EB1B170C8D00999D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3188EA1B170C8D00999D7E /* Images.xcassets */; };
+		8C3188EE1B170C8D00999D7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3188EC1B170C8D00999D7E /* LaunchScreen.xib */; };
+		8C3188FA1B170C8E00999D7E /* CrissCrossAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3188F91B170C8E00999D7E /* CrissCrossAppTests.m */; };
+		8C3189051B170EE400999D7E /* SoundLevelDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3189041B170EE400999D7E /* SoundLevelDetector.m */; };
+		8C3189181B17136C00999D7E /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3189171B17136C00999D7E /* MultipeerConnectivity.framework */; };
+		8C31891A1B17137800999D7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3189191B17137800999D7E /* Foundation.framework */; };
+		8C3189291B18560900999D7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3189281B18560900999D7E /* AudioToolbox.framework */; };
+		8C56D7951B18824D00CFE497 /* PeerConnectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C56D7941B18824D00CFE497 /* PeerConnectionViewCell.m */; };
+		8C8778EF2085D6C400C28BBA /* IPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778D22085D6C300C28BBA /* IPUtils.m */; };
+		8C8778F02085D6C400C28BBA /* PeerFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778D42085D6C300C28BBA /* PeerFinder.m */; };
+		8C8778F12085D6C400C28BBA /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778D72085D6C300C28BBA /* SimplePing.m */; };
+		8C8778F22085D6C400C28BBA /* SimplePingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778D92085D6C300C28BBA /* SimplePingHandler.m */; };
+		8C8778F32085D6C400C28BBA /* MCConnection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778DC2085D6C300C28BBA /* MCConnection.mm */; };
+		8C8778F42085D6C400C28BBA /* MCConnectionInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778DE2085D6C300C28BBA /* MCConnectionInfoViewController.m */; };
+		8C8778F52085D6C400C28BBA /* MCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778E02085D6C300C28BBA /* MCController.m */; };
+		8C8778F62085D6C400C28BBA /* MCProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778E32085D6C300C28BBA /* MCProgressBar.m */; };
+		8C8778F72085D6C400C28BBA /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778E52085D6C300C28BBA /* UIImage+BBlock.m */; };
+		8C8778F82085D6C400C28BBA /* FileSharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778E82085D6C400C28BBA /* FileSharingViewController.m */; };
+		8C8778F92085D6C400C28BBA /* sample_file1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C8778E92085D6C400C28BBA /* sample_file1.txt */; };
+		8C8778FA2085D6C400C28BBA /* sample_file2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C8778EA2085D6C400C28BBA /* sample_file2.txt */; };
+		8C8778FB2085D6C400C28BBA /* section_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8778EB2085D6C400C28BBA /* section_header.png */; };
+		8C8778FC2085D6C400C28BBA /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778EE2085D6C400C28BBA /* SectionHeaderView.m */; };
+		8C8778FF2085DA7C00C28BBA /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8778FE2085DA7C00C28BBA /* Device.m */; };
+		8CF6C3211B1B75EB007C99A0 /* section_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF6C3201B1B75EB007C99A0 /* section_header.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C3188F41B170C8E00999D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C3188CF1B170C8D00999D7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C3188D61B170C8D00999D7E;
+			remoteInfo = CrissCrossApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		813115CF1B1731210061D16A /* TextToSpeechConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextToSpeechConverter.h; sourceTree = "<group>"; };
+		813115D01B1731210061D16A /* TextToSpeechConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextToSpeechConverter.m; sourceTree = "<group>"; };
+		8C3188D71B170C8D00999D7E /* ConnectMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3188DB1B170C8D00999D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3188DC1B170C8D00999D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C3188DE1B170C8D00999D7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C3188DF1B170C8D00999D7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C3188E11B170C8D00999D7E /* ConnectMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ConnectMeViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8C3188E21B170C8D00999D7E /* ConnectMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConnectMeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8C3188E81B170C8D00999D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C3188EA1B170C8D00999D7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8C3188ED1B170C8D00999D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8C3188F31B170C8E00999D7E /* ConnectMeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectMeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3188F81B170C8E00999D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3188F91B170C8E00999D7E /* CrissCrossAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrissCrossAppTests.m; sourceTree = "<group>"; };
+		8C3189031B170EE400999D7E /* SoundLevelDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundLevelDetector.h; sourceTree = "<group>"; };
+		8C3189041B170EE400999D7E /* SoundLevelDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundLevelDetector.m; sourceTree = "<group>"; };
+		8C3189171B17136C00999D7E /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		8C3189191B17137800999D7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C3189281B18560900999D7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8C56D7931B18824D00CFE497 /* PeerConnectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerConnectionViewCell.h; sourceTree = "<group>"; };
+		8C56D7941B18824D00CFE497 /* PeerConnectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerConnectionViewCell.m; sourceTree = "<group>"; };
+		8C8778CE2085D6C300C28BBA /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		8C8778CF2085D6C300C28BBA /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		8C8778D02085D6C300C28BBA /* if_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_types.h; sourceTree = "<group>"; };
+		8C8778D12085D6C300C28BBA /* IPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPUtils.h; sourceTree = "<group>"; };
+		8C8778D22085D6C300C28BBA /* IPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPUtils.m; sourceTree = "<group>"; };
+		8C8778D32085D6C300C28BBA /* PeerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerFinder.h; sourceTree = "<group>"; };
+		8C8778D42085D6C300C28BBA /* PeerFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerFinder.m; sourceTree = "<group>"; };
+		8C8778D52085D6C300C28BBA /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		8C8778D62085D6C300C28BBA /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		8C8778D72085D6C300C28BBA /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		8C8778D82085D6C300C28BBA /* SimplePingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePingHandler.h; sourceTree = "<group>"; };
+		8C8778D92085D6C300C28BBA /* SimplePingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePingHandler.m; sourceTree = "<group>"; };
+		8C8778DB2085D6C300C28BBA /* MCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCConnection.h; sourceTree = "<group>"; };
+		8C8778DC2085D6C300C28BBA /* MCConnection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCConnection.mm; sourceTree = "<group>"; };
+		8C8778DD2085D6C300C28BBA /* MCConnectionInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCConnectionInfoViewController.h; sourceTree = "<group>"; };
+		8C8778DE2085D6C300C28BBA /* MCConnectionInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCConnectionInfoViewController.m; sourceTree = "<group>"; };
+		8C8778DF2085D6C300C28BBA /* MCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCController.h; sourceTree = "<group>"; };
+		8C8778E02085D6C300C28BBA /* MCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCController.m; sourceTree = "<group>"; };
+		8C8778E22085D6C300C28BBA /* MCProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCProgressBar.h; sourceTree = "<group>"; };
+		8C8778E32085D6C300C28BBA /* MCProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCProgressBar.m; sourceTree = "<group>"; };
+		8C8778E42085D6C300C28BBA /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBlock.h"; sourceTree = "<group>"; };
+		8C8778E52085D6C300C28BBA /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBlock.m"; sourceTree = "<group>"; };
+		8C8778E72085D6C400C28BBA /* FileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSharingViewController.h; sourceTree = "<group>"; };
+		8C8778E82085D6C400C28BBA /* FileSharingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSharingViewController.m; sourceTree = "<group>"; };
+		8C8778E92085D6C400C28BBA /* sample_file1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file1.txt; sourceTree = "<group>"; };
+		8C8778EA2085D6C400C28BBA /* sample_file2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file2.txt; sourceTree = "<group>"; };
+		8C8778EB2085D6C400C28BBA /* section_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = section_header.png; path = ConnectMeApp/section_header.png; sourceTree = "<group>"; };
+		8C8778ED2085D6C400C28BBA /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		8C8778EE2085D6C400C28BBA /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		8C8778FD2085DA7C00C28BBA /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		8C8778FE2085DA7C00C28BBA /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		8CF6C3201B1B75EB007C99A0 /* section_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = section_header.png; path = CrissCrossApp/section_header.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C3188D41B170C8D00999D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3189291B18560900999D7E /* AudioToolbox.framework in Frameworks */,
+				8C31891A1B17137800999D7E /* Foundation.framework in Frameworks */,
+				8C3189181B17136C00999D7E /* MultipeerConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3188F01B170C8E00999D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C3188CE1B170C8D00999D7E = {
+			isa = PBXGroup;
+			children = (
+				8C8778DA2085D6C300C28BBA /* connection */,
+				8C8778E62085D6C400C28BBA /* dataShare */,
+				8C8778CD2085D6C300C28BBA /* network */,
+				8C8778E12085D6C300C28BBA /* progressBar */,
+				8C8778EB2085D6C400C28BBA /* section_header.png */,
+				8C8778EC2085D6C400C28BBA /* sectionHeader */,
+				8C3188D91B170C8D00999D7E /* ConnectMeApp */,
+				8C3188F61B170C8E00999D7E /* ConnectMeAppTests */,
+				8C3188D81B170C8D00999D7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C3188D81B170C8D00999D7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C3188D71B170C8D00999D7E /* ConnectMeApp.app */,
+				8C3188F31B170C8E00999D7E /* ConnectMeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C3188D91B170C8D00999D7E /* ConnectMeApp */ = {
+			isa = PBXGroup;
+			children = (
+				8C8778FD2085DA7C00C28BBA /* Device.h */,
+				8C8778FE2085DA7C00C28BBA /* Device.m */,
+				8C3188DE1B170C8D00999D7E /* AppDelegate.h */,
+				8C3188DF1B170C8D00999D7E /* AppDelegate.m */,
+				8C3188E11B170C8D00999D7E /* ConnectMeViewController.h */,
+				8C3188E21B170C8D00999D7E /* ConnectMeViewController.m */,
+				8C3188E71B170C8D00999D7E /* Main.storyboard */,
+				8C3188EA1B170C8D00999D7E /* Images.xcassets */,
+				8C3188EC1B170C8D00999D7E /* LaunchScreen.xib */,
+				8C3188DA1B170C8D00999D7E /* Supporting Files */,
+				8C3189031B170EE400999D7E /* SoundLevelDetector.h */,
+				8C3189041B170EE400999D7E /* SoundLevelDetector.m */,
+				8C56D7851B18618A00CFE497 /* Framework */,
+				8C56D7931B18824D00CFE497 /* PeerConnectionViewCell.h */,
+				8C56D7941B18824D00CFE497 /* PeerConnectionViewCell.m */,
+			);
+			path = ConnectMeApp;
+			sourceTree = "<group>";
+		};
+		8C3188DA1B170C8D00999D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C3188DB1B170C8D00999D7E /* Info.plist */,
+				8C3188DC1B170C8D00999D7E /* main.m */,
+				813115CF1B1731210061D16A /* TextToSpeechConverter.h */,
+				813115D01B1731210061D16A /* TextToSpeechConverter.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C3188F61B170C8E00999D7E /* ConnectMeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C3188F91B170C8E00999D7E /* CrissCrossAppTests.m */,
+				8C3188F71B170C8E00999D7E /* Supporting Files */,
+			);
+			path = ConnectMeAppTests;
+			sourceTree = "<group>";
+		};
+		8C3188F71B170C8E00999D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF6C3201B1B75EB007C99A0 /* section_header.png */,
+				8C3188F81B170C8E00999D7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C56D7851B18618A00CFE497 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8C3189281B18560900999D7E /* AudioToolbox.framework */,
+				8C3189191B17137800999D7E /* Foundation.framework */,
+				8C3189171B17136C00999D7E /* MultipeerConnectivity.framework */,
+			);
+			name = Framework;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8C8778CD2085D6C300C28BBA /* network */ = {
+			isa = PBXGroup;
+			children = (
+				8C8778CE2085D6C300C28BBA /* if_arp.h */,
+				8C8778CF2085D6C300C28BBA /* if_ether.h */,
+				8C8778D02085D6C300C28BBA /* if_types.h */,
+				8C8778D12085D6C300C28BBA /* IPUtils.h */,
+				8C8778D22085D6C300C28BBA /* IPUtils.m */,
+				8C8778D32085D6C300C28BBA /* PeerFinder.h */,
+				8C8778D42085D6C300C28BBA /* PeerFinder.m */,
+				8C8778D52085D6C300C28BBA /* route.h */,
+				8C8778D62085D6C300C28BBA /* SimplePing.h */,
+				8C8778D72085D6C300C28BBA /* SimplePing.m */,
+				8C8778D82085D6C300C28BBA /* SimplePingHandler.h */,
+				8C8778D92085D6C300C28BBA /* SimplePingHandler.m */,
+			);
+			name = network;
+			path = ConnectMeApp/network;
+			sourceTree = "<group>";
+		};
+		8C8778DA2085D6C300C28BBA /* connection */ = {
+			isa = PBXGroup;
+			children = (
+				8C8778DB2085D6C300C28BBA /* MCConnection.h */,
+				8C8778DC2085D6C300C28BBA /* MCConnection.mm */,
+				8C8778DD2085D6C300C28BBA /* MCConnectionInfoViewController.h */,
+				8C8778DE2085D6C300C28BBA /* MCConnectionInfoViewController.m */,
+				8C8778DF2085D6C300C28BBA /* MCController.h */,
+				8C8778E02085D6C300C28BBA /* MCController.m */,
+			);
+			name = connection;
+			path = ConnectMeApp/connection;
+			sourceTree = "<group>";
+		};
+		8C8778E12085D6C300C28BBA /* progressBar */ = {
+			isa = PBXGroup;
+			children = (
+				8C8778E22085D6C300C28BBA /* MCProgressBar.h */,
+				8C8778E32085D6C300C28BBA /* MCProgressBar.m */,
+				8C8778E42085D6C300C28BBA /* UIImage+BBlock.h */,
+				8C8778E52085D6C300C28BBA /* UIImage+BBlock.m */,
+			);
+			name = progressBar;
+			path = ConnectMeApp/progressBar;
+			sourceTree = "<group>";
+		};
+		8C8778E62085D6C400C28BBA /* dataShare */ = {
+			isa = PBXGroup;
+			children = (
+				8C8778E72085D6C400C28BBA /* FileSharingViewController.h */,
+				8C8778E82085D6C400C28BBA /* FileSharingViewController.m */,
+				8C8778E92085D6C400C28BBA /* sample_file1.txt */,
+				8C8778EA2085D6C400C28BBA /* sample_file2.txt */,
+			);
+			name = dataShare;
+			path = ConnectMeApp/dataShare;
+			sourceTree = "<group>";
+		};
+		8C8778EC2085D6C400C28BBA /* sectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8C8778ED2085D6C400C28BBA /* SectionHeaderView.h */,
+				8C8778EE2085D6C400C28BBA /* SectionHeaderView.m */,
+			);
+			name = sectionHeader;
+			path = ConnectMeApp/sectionHeader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C3188D61B170C8D00999D7E /* ConnectMeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3188FD1B170C8E00999D7E /* Build configuration list for PBXNativeTarget "ConnectMeApp" */;
+			buildPhases = (
+				8C3188D31B170C8D00999D7E /* Sources */,
+				8C3188D41B170C8D00999D7E /* Frameworks */,
+				8C3188D51B170C8D00999D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnectMeApp;
+			productName = CrissCrossApp;
+			productReference = 8C3188D71B170C8D00999D7E /* ConnectMeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C3188F21B170C8E00999D7E /* ConnectMeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3189001B170C8E00999D7E /* Build configuration list for PBXNativeTarget "ConnectMeAppTests" */;
+			buildPhases = (
+				8C3188EF1B170C8E00999D7E /* Sources */,
+				8C3188F01B170C8E00999D7E /* Frameworks */,
+				8C3188F11B170C8E00999D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C3188F51B170C8E00999D7E /* PBXTargetDependency */,
+			);
+			name = ConnectMeAppTests;
+			productName = CrissCrossAppTests;
+			productReference = 8C3188F31B170C8E00999D7E /* ConnectMeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C3188CF1B170C8D00999D7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "itaas,inc";
+				TargetAttributes = {
+					8C3188D61B170C8D00999D7E = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7Z2RDM72GP;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					8C3188F21B170C8E00999D7E = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 8C3188D61B170C8D00999D7E;
+					};
+				};
+			};
+			buildConfigurationList = 8C3188D21B170C8D00999D7E /* Build configuration list for PBXProject "ConnectMeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C3188CE1B170C8D00999D7E;
+			productRefGroup = 8C3188D81B170C8D00999D7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C3188D61B170C8D00999D7E /* ConnectMeApp */,
+				8C3188F21B170C8E00999D7E /* ConnectMeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C3188D51B170C8D00999D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8778FA2085D6C400C28BBA /* sample_file2.txt in Resources */,
+				8C8778F92085D6C400C28BBA /* sample_file1.txt in Resources */,
+				8C3188E91B170C8D00999D7E /* Main.storyboard in Resources */,
+				8C3188EE1B170C8D00999D7E /* LaunchScreen.xib in Resources */,
+				8C8778FB2085D6C400C28BBA /* section_header.png in Resources */,
+				8C3188EB1B170C8D00999D7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3188F11B170C8E00999D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF6C3211B1B75EB007C99A0 /* section_header.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C3188D31B170C8D00999D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8778FC2085D6C400C28BBA /* SectionHeaderView.m in Sources */,
+				8C8778F72085D6C400C28BBA /* UIImage+BBlock.m in Sources */,
+				8C8778F82085D6C400C28BBA /* FileSharingViewController.m in Sources */,
+				8C8778FF2085DA7C00C28BBA /* Device.m in Sources */,
+				8C8778F42085D6C400C28BBA /* MCConnectionInfoViewController.m in Sources */,
+				8C8778F22085D6C400C28BBA /* SimplePingHandler.m in Sources */,
+				8C3188E01B170C8D00999D7E /* AppDelegate.m in Sources */,
+				8C3188E31B170C8D00999D7E /* ConnectMeViewController.m in Sources */,
+				8C8778EF2085D6C400C28BBA /* IPUtils.m in Sources */,
+				8C8778F52085D6C400C28BBA /* MCController.m in Sources */,
+				8C8778F12085D6C400C28BBA /* SimplePing.m in Sources */,
+				8C8778F02085D6C400C28BBA /* PeerFinder.m in Sources */,
+				8C8778F62085D6C400C28BBA /* MCProgressBar.m in Sources */,
+				8C3188DD1B170C8D00999D7E /* main.m in Sources */,
+				8C8778F32085D6C400C28BBA /* MCConnection.mm in Sources */,
+				813115D11B1731210061D16A /* TextToSpeechConverter.m in Sources */,
+				8C56D7951B18824D00CFE497 /* PeerConnectionViewCell.m in Sources */,
+				8C3189051B170EE400999D7E /* SoundLevelDetector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3188EF1B170C8E00999D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3188FA1B170C8E00999D7E /* CrissCrossAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C3188F51B170C8E00999D7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C3188D61B170C8D00999D7E /* ConnectMeApp */;
+			targetProxy = 8C3188F41B170C8E00999D7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C3188E71B170C8D00999D7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3188E81B170C8D00999D7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C3188EC1B170C8D00999D7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3188ED1B170C8D00999D7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C3188FB1B170C8E00999D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C3188FC1B170C8E00999D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C3188FE1B170C8E00999D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7Z2RDM72GP;
+				INFOPLIST_FILE = "$(SRCROOT)/ConnectMeApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Parnit.ConnectMeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C3188FF1B170C8E00999D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7Z2RDM72GP;
+				INFOPLIST_FILE = "$(SRCROOT)/ConnectMeApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Parnit.ConnectMeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C3189011B170C8E00999D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrissCrossAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectMeApp.app/ConnectMeApp";
+			};
+			name = Debug;
+		};
+		8C3189021B170C8E00999D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrissCrossAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectMeApp.app/ConnectMeApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C3188D21B170C8D00999D7E /* Build configuration list for PBXProject "ConnectMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3188FB1B170C8E00999D7E /* Debug */,
+				8C3188FC1B170C8E00999D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3188FD1B170C8E00999D7E /* Build configuration list for PBXNativeTarget "ConnectMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3188FE1B170C8E00999D7E /* Debug */,
+				8C3188FF1B170C8E00999D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3189001B170C8E00999D7E /* Build configuration list for PBXNativeTarget "ConnectMeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3189011B170C8E00999D7E /* Debug */,
+				8C3189021B170C8E00999D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C3188CF1B170C8D00999D7E /* Project object */;
+}
